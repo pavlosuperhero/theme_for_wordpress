@@ -14,7 +14,7 @@
 		<div class="thumbnails-head-blog">
 		<?php 
 		if( has_post_thumbnail() ) {
-			set_post_thumbnail_size( 64,64 );
+			set_post_thumbnail_size( 75,75 );
 			the_post_thumbnail();
 			}
 		else {
