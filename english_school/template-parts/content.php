@@ -10,8 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<div>
+		<header class="entry-header">
+		<div class="thumbnails-head-blog">
 		<?php 
 		if( has_post_thumbnail() ) {
 			set_post_thumbnail_size( 64,64 );
@@ -21,7 +21,8 @@
 		echo '<img src="'.get_bloginfo("template_url").'/images/img-default.png" />';
 		}
 		?>
-		</div><?php
+		</div>
+		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
@@ -31,7 +32,6 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<?php
 			endif; ?>
-
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

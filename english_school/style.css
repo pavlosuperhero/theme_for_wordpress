@@ -429,15 +429,20 @@ html {
 .single-post{
 	border:1px solid;
 	max-height:300px;
-	overflow:hidden;
-}
-.content_area_blog{
-	background-color:blue;
-	display:flex;
 }
 .entry-header{
 	display:flex;
 	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+	margin-top:40px;
+}
+.content_conteiner{
+	max-width:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+	overflow:hidden;
 }
 body {
 	background: #fff;

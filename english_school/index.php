@@ -27,7 +27,7 @@ get_header(); ?>
 				</header>
 			<?php
 			endif;
-
+			echo '<div class="content_conteiner">';
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -41,6 +41,7 @@ get_header(); ?>
 				
 			echo '</div>';
 			endwhile;
+		echo '</div>';
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
