@@ -14,8 +14,8 @@
 		<div>
 		<?php 
 		if( has_post_thumbnail() ) {
-			set_post_thumbnail_size( 64,64 );
 			the_post_thumbnail();
+		set_post_thumbnail_size( 64,64 );
 			}
 		else {
 		echo '<img src="'.get_bloginfo("template_url").'/images/img-default.png" />';

@@ -9,7 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>class="content_area_blog">
+	<div class="">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -47,4 +48,5 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
-i</article><!-- #post-<?php the_ID(); ?> -->
+	</div>
+</article><!-- #post-<?php the_ID(); ?> -->

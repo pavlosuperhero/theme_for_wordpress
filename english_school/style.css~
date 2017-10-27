@@ -414,8 +414,8 @@ html {
 	border: 1px solid;
 	border-color:#e2e2e2;
 	display:flex;
-	justify-content:center;
 	flex-wrap:wrap;
+
 }
 .home-slider{
 	background-color:grey;
@@ -424,6 +424,21 @@ html {
 	border-color:#31363c;
 	height:350px;
 	width:100%
+}
+
+.single-post{
+	border:1px solid;
+	max-height:300px;
+	overflow:hidden;
+}
+.content_area_blog{
+	background-color:blue;
+	display:flex;
+}
+.entry-header{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
 }
 body {
 	background: #fff;
