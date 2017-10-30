@@ -34,18 +34,26 @@ if ( ! function_exists( 'english_school_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-
+		
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		/*
+		 =========================================================================
+					Theme Support Function
+		 =========================================================================
+		 */
 
+		add_theme_support( 'post-thumbnails' );
+		
+		
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'english_school' ),
 			'menu-2' => esc_html__( 'Secondary', 'english_school'),
+			'menu-3' => esc_html__( 'Social_Menu', 'english_school'),
 		) );
 
 		/*
@@ -156,4 +164,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

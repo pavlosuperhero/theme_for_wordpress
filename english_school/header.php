@@ -28,9 +28,12 @@
 	<header id="masthead" class="site-header">
 		<div class="small-custome-nav">
 			<div class="social-place" >
-				<a href="#">facebook</a>
-					<span class="fa fa-facebook"></span>
-				</a>
+				<?php
+					wp_nav_menu( array(
+							'theme_location' => 'menu-3',
+							'menu_id'        => 'Social_Menu',
+						) );
+					?>
 			</div>
 			<nav class="my-nav">
 			<?php
